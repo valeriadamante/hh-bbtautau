@@ -95,7 +95,7 @@ EventTags EventTagCreator::CreateEventTags(const DataId& dataId_base, float weig
               parameters.unc_source = UncertaintySource::None;
               parameters.unc_scale = UncertaintyScale::Central;
               if(!iterativeFit_corrections.count(parameters))
-                  parameters.tune = false;
+                  parameters.tune = true;
           }
           return weight_btag_IterativeFit*iterativeFit_corrections.at(parameters);
         }

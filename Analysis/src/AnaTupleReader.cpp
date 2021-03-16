@@ -311,7 +311,7 @@ void AnaTupleReader::DefineBranches(const NameSet& active_var_names, bool all, c
            {"vbf_cat"}, true);
 
     const auto GetTune = [&](unsigned dataset){
-      bool is_TuneCP5=0;
+      bool is_TuneCP5=1;
       if(hastune==2){
         std::vector<std::string> datasets_tuneCP5 = {"TTTo2L2Nu", "TTToSemiLeptonic", "TTToHadronic", "ST_tW_antitop", "ST_tW_top", "ST_t-channel_antitop", "ST_t-channel_top"};
         std::vector<unsigned> datasets_tuneCP5_ids;
